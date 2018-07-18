@@ -1,0 +1,19 @@
+{
+  "name": "weston-new-music-school",
+  "version": "2.0.0",
+  "description": "Hi! This is a music school project that I'll try to build!",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/jcunanan05/music-school.git"
+  },
+  "author": "Jonathan Albert Cunanan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jcunanan05/music-school/issues"
+  },
+  "homepage": "https://github.com/jcunanan05/music-school#readme"
+}
