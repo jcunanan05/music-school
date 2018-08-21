@@ -1,11 +1,11 @@
 import Head from '../components/Head';
-import Navbar from '../components/Navbar';
+import App from '../components/App';
 
 const Index = () => (
   <div>
     <Head />
         
-    <Navbar />
+    <App />
   </div>
 );
 

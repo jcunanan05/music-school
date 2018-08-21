@@ -4,6 +4,8 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
+import Button from '@material-ui/core/Button';
+import Grid from '@material-ui/core/Grid';
 
 const styles = {
   flex: {
@@ -14,7 +16,7 @@ const styles = {
     marginLeft: -12,
     marginRight: 20
   }
-}
+};
 
 const Navbar = (props) => {
   const { classes } = props;
@@ -31,12 +33,15 @@ const Navbar = (props) => {
           <MenuIcon />
         </IconButton>
         <Typography 
-          variant="title" 
+          variant="title"
           color="inherit"
           className={classes.flex}>
-          Weston
-        </Typography>  
-      </Toolbar> 
+          Weston New Music School
+        </Typography>
+
+        <Button color="inherit">Home</Button>
+        <Button color="inherit">About</Button>
+      </Toolbar>
     </AppBar>
   );
 }
