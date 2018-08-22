@@ -2,7 +2,7 @@ const Navbar = (props) => {
 
   return (
     <nav className="nav">
-      <p>Hello World</p>
+      <p>this is a navbar</p>
     </nav>
   );
 }

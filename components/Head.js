@@ -10,6 +10,6 @@ export default () => (
     <meta 
       http-equiv="X-UA-Compatible" 
       content="ie=edge"/>
-    <link rel="stylesheet" href="/_next/static/app.css" />
+    <link rel="stylesheet" href="/_next/static/style.css" />
   </Head>
 );

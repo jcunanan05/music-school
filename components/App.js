@@ -4,7 +4,7 @@ const App = (props) => {
   return (
     <React.Fragment>
       <Navbar />
-      <h1>Hello World</h1>
+      <h1 className="title">This is a title</h1>
     </React.Fragment>
   );
 }

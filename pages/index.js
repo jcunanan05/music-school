@@ -1,6 +1,6 @@
 import Head from '../components/Head';
 import App from '../components/App';
-import '../components/css/app.sass';
+import '../components/sass/app.sass';
 
 const Index = () => (
   <div>
