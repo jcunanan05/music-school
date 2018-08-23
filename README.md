@@ -19,3 +19,6 @@ Hi! This is a music school project that I'll try to build!
   * try wireframing with balsamiq first
 * BEM__Naming (?)
   * for sure.
+
+### Work today:
+- Black theme navbar
