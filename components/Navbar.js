@@ -1,48 +1,58 @@
+import Link from 'next/link';
+
 const NavbarItem = (props) => (
-  <a 
-    href={props.url} 
-    className="navbar-item">
-    {props.text}
-    {props.children}
-  </a>
+  <Link href={props.url}>
+    <a className="navbar-item">
+      {props.text}
+      {props.children}
+    </a>
+  </Link>
 );
 
-const BurgerBar = () => (
-  <a 
+const BurgerBar = (props) => (
+  <a
+    onClick={props.onClick} 
     className="navbar-burger"
     role="button"
     aria-label="menu"
-    aria-expanded="false">
+    aria-expanded={props.isOpen}>
     <span aria-hidden="true"></span> 
     <span aria-hidden="true"></span> 
     <span aria-hidden="true"></span> 
   </a>
 );
 
-const Navbar = (props) => {
+class Navbar extends React.Component {
+  state = {
+    isOpen: false
+  }
 
-  return (
-    <nav 
-      className="navbar is-primary" 
-      role="navigation" 
-      aria-label="main navigation">
-      <div className="navbar-brand">
-        <NavbarItem url="">
-          <p className="navbar-brand__title title">
-            BRAND
-          </p>
-        </NavbarItem>
+  render() {
+    return (
+      <nav 
+        className="navbar is-primary" 
+        role="navigation" 
+        aria-label="main navigation">
+        <div className="navbar-brand">
+          <NavbarItem url="">
+            <p className="navbar-brand__title title">
+              BRAND
+            </p>
+          </NavbarItem>
 
-        <BurgerBar />
-      </div>
+          <BurgerBar 
+            onClick={() => {this.setState({ isOpen: !this.state.isOpen })}}
+            isOpen={this.state.isOpen}/>
+        </div>
 
-      <div className="navbar-menu">
-        <NavbarItem text="home" url="#" />
-        <NavbarItem text="instruments" url="#" />
-        <NavbarItem text="contact" url="#" />
-      </div>
-    </nav>
-  );
+        <div className={`navbar-menu ${this.state.isOpen ? 'is-active' : ''}`}>
+          <NavbarItem text="home" url="#" />
+          <NavbarItem text="instruments" url="#" />
+          <NavbarItem text="contact" url="#" />
+        </div>
+      </nav>
+    );
+  }
 }
 
 export default Navbar;
