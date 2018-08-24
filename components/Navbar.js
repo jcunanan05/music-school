@@ -1,3 +1,24 @@
+const NavbarItem = (props) => (
+  <a 
+    href={props.url} 
+    className="navbar-item">
+    {props.text}
+    {props.children}
+  </a>
+);
+
+const BurgerBar = () => (
+  <a 
+    className="navbar-burger"
+    role="button"
+    aria-label="menu"
+    aria-expanded="false">
+    <span aria-hidden="true"></span> 
+    <span aria-hidden="true"></span> 
+    <span aria-hidden="true"></span> 
+  </a>
+);
+
 const Navbar = (props) => {
 
   return (
@@ -6,19 +27,19 @@ const Navbar = (props) => {
       role="navigation" 
       aria-label="main navigation">
       <div className="navbar-brand">
-        <a href="" className="navbar-item">
-          <p className="navbar-brand__title title">BRAND</p>
-        </a>
+        <NavbarItem url="">
+          <p className="navbar-brand__title title">
+            BRAND
+          </p>
+        </NavbarItem>
 
-        <a 
-          className="navbar-burger"
-          role="button"
-          aria-label="menu"
-          aria-expanded="false">
-          <span aria-hidden="true"></span> 
-          <span aria-hidden="true"></span> 
-          <span aria-hidden="true"></span> 
-        </a>
+        <BurgerBar />
+      </div>
+
+      <div className="navbar-menu">
+        <NavbarItem text="home" url="#" />
+        <NavbarItem text="instruments" url="#" />
+        <NavbarItem text="contact" url="#" />
       </div>
     </nav>
   );
