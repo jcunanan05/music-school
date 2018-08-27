@@ -36,7 +36,7 @@ class Navbar extends React.Component {
         <div className="navbar-brand">
           <NavbarItem url="">
             <p className="navbar-brand__title title">
-              BRAND
+              W
             </p>
           </NavbarItem>
 
@@ -45,10 +45,13 @@ class Navbar extends React.Component {
             isOpen={this.state.isOpen}/>
         </div>
 
-        <div className={`navbar-menu ${this.state.isOpen ? 'is-active' : ''}`}>
-          <NavbarItem text="home" url="#" />
-          <NavbarItem text="instruments" url="#" />
-          <NavbarItem text="contact" url="#" />
+        <div className={`navbar-menu 
+          ${this.state.isOpen ? 'is-active' : ''}`}>
+          <div className="navbar-end">
+            <NavbarItem text="Home" url="#" />
+            <NavbarItem text="Instruments" url="#" />
+            <NavbarItem text="Contact" url="#" />
+          </div>
         </div>
       </nav>
     );

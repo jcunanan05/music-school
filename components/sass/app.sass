@@ -7,5 +7,14 @@ div#__next
   flex-flow: column
   min-height: 100vh
 
-div#__next div
+// make the page occupy the whole viewport
+div#__next > div
   flex: 1
+  display: flex
+  flex-flow: column
+
+main
+  flex: 1
+
+.footer
+  padding-bottom: 3rem
