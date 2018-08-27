@@ -1,3 +1,16 @@
 const withSass = require('@zeit/next-sass');
 
-module.exports = withSass();
+const nextJsConfig = {
+  exportPathMap: function() {
+    return {
+      '/': { page: '/' }
+    }
+  }
+}
+
+module.exports = withSass({
+  webpack(config, options) {
+    options.exportPathMap = nextJsConfig.exportPathMap;
+    return config;
+  }
+});
