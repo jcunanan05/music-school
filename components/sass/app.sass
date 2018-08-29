@@ -1,5 +1,7 @@
 @import './all'
 
+$section-color-odd: #f1f1f1
+
 html,
 body,
 div#__next
@@ -16,5 +18,5 @@ div#__next > div
 main
   flex: 1
 
-.footer
-  padding-bottom: 3rem
+.section:nth-child(even)
+  background-color: $section-color-odd
