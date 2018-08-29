@@ -21,4 +21,4 @@ Hi! This is a music school project that I'll try to build!
   * for sure.
 
 ### Work today:
-- Convert NextJS app to static app and deploy to netlify
+- Style / Build the sections page
