@@ -23,3 +23,4 @@ Hi! This is a music school project that I'll try to build!
 ### Work today:
 - Style / Build the sections page
 - Sections content
+- Add `p` on box content`
