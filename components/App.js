@@ -1,7 +1,7 @@
 import Navbar from './Navbar';
 import Banner from './Banner';
 import Footer from './Footer';
-import Content from './Content';
+import Homepage from './pages/Homepage';
 
 const App = (props) => {  
   return (
@@ -11,17 +11,7 @@ const App = (props) => {
       <main className="main">
         <Banner />
 
-        <Content>
-          <h2 className="title">Contact</h2>
-
-          <p>
-            <em>
-              Weston New Music School<br />
-              2125 Weston Road,<br />
-              York, ON M9N 1X8<br />
-            </em>
-          </p>
-        </Content>
+        <Homepage />
       </main>
 
       <Footer />
