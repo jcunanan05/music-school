@@ -22,23 +22,23 @@
 
 ### wish list
 
-- See promo ( not final )
-- See clips ( wishlist )
+- Promos
+- See clips
 - See gallery
 - Screen Reader accessibility
 
-### scaling plans
+### future plans plans
 
 - E-learning system
 - Blog
 
 ### Requirements / Technologies to use
 
-- Static side rendering
-  - Maybe next js - to practice with react
+- Static site
+  - Gatsby
 - Good UI
   - Use material-ui react
 - Production quality code
-  - Use next js build
+  - Use gatsby build tools
 - Free hosting
   - netlify
