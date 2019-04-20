@@ -1,9 +1,9 @@
 import React from 'react'
 import Typography from '@material-ui/core/Typography'
 
-function Footer() {
+function Footer({ classes }) {
   return (
-    <footer>
+    <footer className={classes.root}>
       <Typography>Footer</Typography>
     </footer>
   )
