@@ -1,25 +1,10 @@
 /* eslint-disable no-underscore-dangle...*/
 
 import { SheetsRegistry } from 'jss'
-import {
-  createMuiTheme,
-  createGenerateClassName,
-} from '@material-ui/core/styles'
+import { createGenerateClassName } from '@material-ui/core/styles'
+import theme from './muiThemeConfig'
 
 // Create a theme with Gatsby brand colors. You can choose your own
-const theme = createMuiTheme({
-  palette: {
-    primary: {
-      main: '#663399',
-    },
-    secondary: {
-      main: '#ffb238',
-    },
-  },
-  typography: {
-    useNextVariants: true,
-  },
-})
 
 function createPageContext() {
   return {
