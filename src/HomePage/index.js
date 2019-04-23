@@ -1,9 +1,13 @@
 import React from 'react'
-import Typography from '@material-ui/core/Typography'
+import Navbar from '../components/Navbar'
 import withRoot from '../theme/withRoot'
 
 function HomePage() {
-  return <Typography variant="h1">Hello World</Typography>
+  return (
+    <div className="IndexPage">
+      <Navbar />
+    </div>
+  )
 }
 
 export default withRoot(HomePage)
