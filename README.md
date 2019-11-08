@@ -20,6 +20,6 @@ To cleanup:
 
 ### Jekyll
 
-To create a new project:
+To run the dev environment:
 
-- run `jekyll new my_project`
+- run bundle exec jekyll server --host=0.0.0.0
