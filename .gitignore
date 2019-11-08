@@ -3,10 +3,11 @@
 # Edit at https://www.gitignore.io/?templates=macos,jekyll
 
 ### Jekyll ###
-_site/
-.sass-cache/
-.jekyll-cache/
+_site
+.sass-cache
+.jekyll-cache
 .jekyll-metadata
+vendor
 
 ### macOS ###
 # General
