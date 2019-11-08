@@ -1,26 +1,25 @@
-# Music School Project
+# Jekyll Playground
 
-Hi! This is a music school project that I'll try to build!
+Exploring how jekyll works. Setup with docker also included.
 
-### Requirements:
-* Working product site
-* Show what the school is, what they teach, and the instrument they offer
-* Display the logo
+## How to run
 
-### Plans:
-* Learn webpack, and integrate sass, babel, uglify, and dev and prod environments?
-  * Decided to stick with learning react via NextJS
-* Full grid site? or use Bulma, sass and edit variables? or combine grid and bulma-sass?? hmmm...
-  * More of flexbox. Because bulma is a flexbox framework
-  * Used NextJS-sass plugin
-* include png school Logo (?)
-  * planning to include 3 resolutions (mobile, tablet, high res logo)
-* Research some visual ideas
-  * try wireframing with balsamiq first
-* BEM__Naming (?)
-  * for sure.
+### Docker
 
-### Work today:
-- Style / Build the sections page
-- Sections content
-- Add `p` on box content`
+- Build the docker compose first. run `docker-compose buld`
+- Run the container with ports. `docker-compose run --rm --service-ports jekyll_dev`
+
+To run on multiple terminal windows:
+
+- run `docker exec -it YOUR_CONTAINER_ID /bin/bash`
+
+To cleanup:
+
+- run docker-compose down
+- run docker rmi rails-docker_ruby_dev
+
+### Jekyll
+
+To create a new project:
+
+- run `jekyll new my_project`
