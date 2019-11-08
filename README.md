@@ -1,6 +1,6 @@
-# Jekyll Playground
+# Music school
 
-Exploring how jekyll works. Setup with docker also included.
+Built with jekyll. Instructions below.
 
 ## How to run
 
@@ -16,7 +16,7 @@ To run on multiple terminal windows:
 To cleanup:
 
 - run docker-compose down
-- run docker rmi rails-docker_ruby_dev
+- run docker rmi jekyl_dev
 
 ### Jekyll
 
