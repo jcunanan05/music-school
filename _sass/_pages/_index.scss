@@ -11,8 +11,22 @@
     .main__video {
       flex: 2;
       flex-basis: 25rem;
+      position: relative;
       background: #efefef;
       box-shadow: 0 0 15px 0 #b1b1b1ef;
+
+      iframe.overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      .overlay__spacer {
+        width: 100%;
+        height: 100%;
+      }
     }
 
     .main__content {
