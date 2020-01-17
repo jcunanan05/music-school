@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="/assets/css/styles.css" />
   </head>
 
-  <body class="default-layout">
+  <body class="{{ "default-layout" }}">
     <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
         <a href="/" class="navbar-item">
@@ -60,9 +60,7 @@
 
     {{ content }}
 
-    <script
-      defer
-      src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
-    ></script>
+    <script src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="/assets/js/index.js"></script>
   </body>
 </html>
