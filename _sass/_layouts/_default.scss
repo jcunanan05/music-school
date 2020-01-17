@@ -1,0 +1,30 @@
+body.default-layout {
+  &,
+  & p,
+  & h1,
+  & h2,
+  & h3,
+  & h4,
+  & h5,
+  & h6,
+  & button,
+  & a,
+  & input,
+  & select,
+  & textarea {
+    font-family: "PT Serif", serif;
+  }
+
+  & .button,
+  & a.button {
+    border-radius: 0.05rem;
+  }
+
+  .navbar {
+    a.navbar-item {
+      &:hover {
+        color: black;
+      }
+    }
+  }
+}
